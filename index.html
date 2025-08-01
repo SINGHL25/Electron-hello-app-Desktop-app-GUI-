@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Electron Desktop App</title>
+    <style>
+      body { font-family: Arial; text-align: center; margin-top: 50px; }
+    </style>
+  </head>
+  <body>
+    <h2>Hello from Electron</h2>
+    <input type="text" id="name" placeholder="Enter your name" />
+    <button onclick="greet()">Greet</button>
+    <p id="output"></p>
+
+    <script>
+      function greet() {
+        const name = document.getElementById('name').value;
+        document.getElementById('output').innerText = `Hello, ${name}!`;
+      }
+    </script>
+  </body>
+</html>
 
